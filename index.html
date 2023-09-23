@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style.css">
+    <title>Perkenalan</title>
+</head>
+<body>
+    <header>
+        <div class="title-container">
+            <h1>Hi!</h1>
+            <p>Let Me Introduce Myself</p>
+        </div>        
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#wcid">What Can I Do?</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article id="home" class="home-container">
+            <div class="content-description">
+                <h1>Hallo!</h1>            
+                <p>
+                    Perkenalkan nama saya adalah Christiano Zetro AB Sinaga. 
+                    Saya adalah seorang Entry-Level Web Developer, yang sekarang masih menempuh kuliah
+                    di Universitas Negeri Surabaya. Dalam kuliah saya mengambil jurusan S1 Teknik Informatika.
+                    Saya masih belum lulus dan masih menempuh di semester 5, yang berarti masih menjalani
+                    tahun ketiga saya.
+                </p>            
+            </div>            
+            <img src="assets/img/CHRISTIANO.JPG" alt="Gambar Penulis">        
+        </article>
+        <article id="wcid" class="wcid-container">
+            <h1>What Can I Do?</h1>
+            <p>Berikut adalah list list dari apa yang bisa saya lakukan setelah belajar
+                di Universitas Negeri Surabaya, selama 3 tahun.
+            </p>
+            <section class="javaAppDevelopment-container">                
+                <div class="content-description">
+                    <h1>Java App Development</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam distinctio cumque quibusdam delectus illum nostrum incidunt sequi ullam ad. Minima doloribus fuga dignissimos eaque aut. Dolores quod architecto exercitationem velit?</p>                
+                </div>                
+                <img src="assets/img/Java_(programming_language)-Logo.wine.png" alt="">                           
+            </section>
+            <section class="webDev-container">
+                <div class="content-description">
+                    <h1>Web Development</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, unde, deserunt vel inventore laboriosam sit magni non est, dolores dolore quod ducimus et! Aut laudantium asperiores molestias illum ea. Laudantium.</p>
+                </div>
+                <img src="assets/img/png-transparent-web-development-web-design-software-development-web-developer-web-design-blue-angle-web-design-removebg-preview.png" alt="">
+            </section>
+            <section class="backend-container">
+                <div class="content-description">
+                    <h1>Backend Programming</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam earum tenetur officiis iure eos, enim, recusandae nobis adipisci ut facilis, sapiente placeat aspernatur! Aut dolorem autem quos fugit iure praesentium!</p>
+                </div>
+                <img src="assets/img/sql-logo.jpg" alt="">
+            </section>            
+        </article>  
+        <article id="gallery" class="gallery-container">
+            <h1>Gallery</h1>
+            <div class="gallery-slideshow">
+                <img class="slides" src="/assets/img/gallery1.png" alt="gallery 1">
+                <img class="slides" src="assets/img/gallery2.png" alt="gallery 2">
+                <img class="slides" src="assets/img/gallery3.png" alt="gallery 3">
+                <img class="slides" src="assets/img/gallery4.png" alt="gallery 4">
+            </div>
+            <p>
+                Saya telah mengembangkan beberapa aplikasi, salah satunya adalah LABMAN, yang berfokus pada manajemen laboratorium di lingkungan universitas. LABMAN memungkinkan dosen dan mahasiswa untuk melihat jadwal laboratorium, melakukan pemesanan, dan melaporkan masalah teknis. Admin universitas dapat mengawasi penggunaan laboratorium, memproses peminjaman, dan mengelola inventaris peralatan. Aplikasi ini memecahkan banyak masalah dalam manajemen laboratorium, meningkatkan efisiensi penggunaan sumber daya, dan meningkatkan pengalaman akademik. Ini adalah contoh dari kontribusi saya sebagai mahasiswa Teknik Informatika dalam meningkatkan efisiensi di lingkungan pendidikan.
+            </p>            
+            <script>
+                var slideIndex = 0;
+                carousel();
+
+                function carousel() {
+                  var i;
+                  var x = document.getElementsByClassName("slides");
+                  for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                  }
+                  slideIndex++;
+                  if (slideIndex > x.length) {slideIndex = 1}
+                  x[slideIndex-1].style.display = "block";
+                  setTimeout(carousel, 4000);
+                }
+            </script>
+        </article>      
+    </main>
+    <footer>
+        <p>&#169 2023, Christiano Sinaga</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&family=Rubik:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
+}
+
+body {
+    box-sizing: border-box;
+}
+
+header {
+    display: inline;
+}
+
+main {    
+    display: flex;
+    flex-direction: column;    
+}
+
+article {        
+    display: flex;
+    flex-direction: column;   
+    padding: 20px;         
+    gap: 1.2em;    
+    margin: auto;
+    max-width: 800px;
+}
+
+article > h1 {
+    font-size: 50px;
+}
+
+main > article {
+    margin-top: 100px;
+}
+
+.title-container {
+    display: flex;   
+    background-color: #053B50;
+    flex-direction: column;
+    color: #EEEEEE;
+    padding-block: 40px;
+    align-items: center;
+}
+
+nav {
+    background-color: #176B87;
+    color: #EEEEEE;  
+    padding-block: 20px;  
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;    
+    gap: 1.5em;
+    justify-content: center;        
+}
+
+nav li {
+    list-style: none;      
+}
+
+nav a {
+    text-decoration: none;
+    color: #EEEEEE;        
+}
+
+nav li a {
+    font-weight: 400;    
+    transition: all .2s ease-in-out;
+}
+
+nav li a:hover {
+    background-color: #64CCC5;
+    padding: 10px;
+    font-weight: 700;
+}
+
+.home-container img {    
+    width: 12em;   
+    border-radius: 22px;       
+}
+
+.home-container {
+    gap: 1.5em;
+    flex-direction: row;
+}
+
+.home-container h1 {
+    font-size: 70px;
+}
+
+.content-description {
+    margin-block: auto;
+}
+
+.javaAppDevelopment-container, .webDev-container, .backend-container {
+    flex-direction: row;
+}
+
+.wcid-container img {
+    width: 12em;   
+    border-radius: 22px;     
+}
+
+section {
+    display: flex;
+    flex-direction: column;  
+    gap: 2em;  
+}
+
+.webDev-container img {
+   width: 7em;
+   order: -1;
+}
+
+.gallery-slideshow img {
+    width: 70%;
+    margin: auto;    
+    animation: fading 5s;
+}
+
+@keyframes fading {
+    0% {opacity: 0;}
+    20% {opacity: 1;}    
+}
+
+.gallery-slideshow {        
+    width: 100%;
+}
+
+footer {
+    background-color: #176B87;
+    color: #EEEEEE;
+    text-align: center;
+    font-weight: 900;
+    padding-block: 20px;
+}
+
+@media screen and (max-width:425px) {
+    .home-container, .backend-container, .javaAppDevelopment-container, .webDev-container {
+        flex-direction: column;
+    }
+
+    .home-container img, .backend-container img, .javaAppDevelopment-container img, .webDev-container img {
+        margin: auto;
+    }
+
+    .webDev-container img{
+        order: 0;
+    }
+
+    .gallery-slideshow img {
+        width: 100%;
+    }
+}
