@@ -36,6 +36,10 @@ main > article {
     margin-top: 100px;
 }
 
+.gallery-container {
+    margin-bottom: 100px;
+}
+
 .title-container {
     display: flex;   
     background-color: #053B50;
@@ -142,7 +146,7 @@ footer {
     padding-block: 20px;
 }
 
-@media screen and (max-width:425px) {
+@media screen and (max-width:648px) {
     .home-container, .backend-container, .javaAppDevelopment-container, .webDev-container {
         flex-direction: column;
     }
