@@ -16,7 +16,7 @@ header {
 
 main {    
     display: flex;
-    flex-direction: column;    
+    flex-direction: row;       
 }
 
 article {        
@@ -25,14 +25,14 @@ article {
     padding: 20px;         
     gap: 1.2em;    
     margin: auto;
-    max-width: 800px;
+    max-width: 800px;    
 }
 
 article > h1 {
     font-size: 50px;
 }
 
-main > article {
+.content > article {
     margin-top: 100px;
 }
 
@@ -146,7 +146,53 @@ footer {
     padding-block: 20px;
 }
 
-@media screen and (max-width:648px) {
+.content {
+    flex: 5;
+}
+
+aside {
+    display: flex;
+    flex-direction: column;   
+    justify-content: center;
+    flex: 1; 
+    margin: 20px 30px;
+}
+
+.contact-container {       
+    align-items: center;        
+    padding: 20px;
+    gap: 1.2em;
+    text-align: center;    
+}
+
+.contact-container ul {
+    display: flex;
+    flex-direction: row;
+    gap: 1.4em;
+}
+
+.contact-container li {
+    list-style: none;          
+}
+
+.contact-container li a {
+    font-size: 1.2rem;
+    color:#053B50;
+    transition: all .2s ease-in-out;
+}
+
+.contact-container li a:hover {
+    color:#EEEEEE;
+    background-color: #176B87;
+    padding: 20px;    
+}
+
+.contact-container img {        
+    width: 12em;
+    border-radius: 100px;
+}
+
+@media screen and (max-width:768px) {
     .home-container, .backend-container, .javaAppDevelopment-container, .webDev-container {
         flex-direction: column;
     }
@@ -162,4 +208,9 @@ footer {
     .gallery-slideshow img {
         width: 100%;
     }
+    
+    main {
+        flex-direction: column;
+    }
+
 }
